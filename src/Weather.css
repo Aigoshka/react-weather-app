@@ -1,0 +1,64 @@
+.Weather .current-weather {
+  border: 1px none;
+  border-radius: 25px;
+  background-image: linear-gradient(#aecdff, #5896fd);
+  box-shadow: 0px 12px 16px #aecdff;
+  margin: 35px 0 30px 0px;
+  padding: 20px 10px 20px 10px;
+}
+.Weather .main-weather-icon {
+  width: 160px;
+  position: absolute;
+  bottom: 0px;
+  right: 2px;
+}
+.main-icon-description {
+  margin-top: 55px;
+  margin-left: -10px;
+  font-size: 17px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.current-deegre {
+  font-size: 58px;
+  font-family: "Inter", sans-serif;
+  background-color: aliceblue;
+  background-image: linear-gradient(#ffffff, #cfe1fd 64%, #93bcff);
+  text-shadow: none;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 30px;
+}
+.main-deegre-units {
+  position: absolute;
+  top: -8px;
+  font-size: 11px;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+.deegres-c {
+  color: white;
+  cursor: default;
+}
+.deegres-f {
+  color: white;
+  cursor: default;
+}
+
+.feels-like {
+  color: #fff;
+  font-size: 13px;
+  position: relative;
+  top: 17px;
+  right: 4px;
+}
+.feels-like-unit {
+  font-size: 9px;
+  position: relative;
+  top: -5px;
+}

@@ -2,8 +2,8 @@
 import './App.css';
 import Search from "./Search";
 import Current from "./Current";
+import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <div className="card">
           <Search />
           <Current/>
-          
+          <Weather/>
         </div>
         
       </div>
