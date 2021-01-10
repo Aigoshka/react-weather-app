@@ -3,11 +3,11 @@
   margin-top: 2px;
 }
 
-.city-headline {
+.Info .city-headline {
   font-size: 20px;
   color: #3a3b3efa;
 }
-.day-headline {
+.Info .day-headline {
   font-size: 12px;
   color: #bfc0c3;
 }

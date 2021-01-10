@@ -26,7 +26,7 @@ button {
   font-size: 14px;
 }
 
-.card {
+.weather-app-wrapper .card {
   padding: 25px 20px;
   border: 6px solid #adb5bd85;
   background-image: linear-gradient(#ffffff, 40%, #eaeaf1b3);

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Search.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Search (){
     return (
@@ -13,11 +14,11 @@ export default function Search (){
             autoComplete="off"
             autoFocus="on"
           />
-          <button type="submit" className="btn btn-primary">
-            <i className="fas fa-search"></i>
+          <button variant="primary" type="submit" className="btn btn-primary">
+            <FontAwesomeIcon icon="search" className="search-icon" />
           </button>
-          <button type="submit" className="btn btn-primary">
-            <i className="fas fa-map-marker-alt"></i>
+          <button variant="primary" type="submit" className="btn btn-primary">
+           <FontAwesomeIcon icon="map-marker-alt"/>
           </button>
         </form>
       </div>
