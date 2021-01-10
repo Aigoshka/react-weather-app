@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Search from "./Search";
+import Current from "./Current";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <p>
-          Hello from react
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div clasName="App">
+      <div className="weather-app-wrapper">
+        <div className="card">
+          <Search />
+          <Current/>
+          
+        </div>
+        
+      </div>
     </div>
   );
 }

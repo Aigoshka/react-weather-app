@@ -1,0 +1,28 @@
+.form-control {
+  max-width: 170px;
+  margin-left: 12px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 10px solid #b1bdad85;
+  box-shadow: 3px 3px 10px #e7eaef;
+}
+.form-inline {
+  margin-bottom: 15px;
+}
+.btn-primary {
+  background-color: #aecdff;
+  border-color: seashell;
+  color: #806ef8;
+  margin-right: 5px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5896fd;
+  border-color: seashell;
+}
+.search {
+  color: red;
+}
