@@ -9,7 +9,7 @@
   border-radius: 8px;
   text-align: center;
   position: relative;
-  left: 26px;
+  left: 20px;
   padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
@@ -25,10 +25,13 @@
   text-align: center;
 }
 .wind-box {
-  left: 20px;
+  left: 19px;
 }
 .humidity-box {
-  left: 15px;
+  left: 17px;
+}
+.max-box {
+  left: 26px;
 }
 .wind-col {
   padding-right: 0;
