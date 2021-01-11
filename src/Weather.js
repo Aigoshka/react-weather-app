@@ -1,6 +1,5 @@
 import React from "react";
 import "./Weather.css";
-import Images from './cloudy-day-1.svg'
 export default function Wether() {
   let weatherData = {
     iconDescription: "Cloudy Day",
@@ -15,7 +14,7 @@ export default function Wether() {
             <li>
               <img
                 className="main-weather-icon"
-                src={Images}
+                src="images/rainy-2.svg"
                alt="cloudy day"
               />
             </li>

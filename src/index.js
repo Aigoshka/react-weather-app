@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faSearch,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import {faSearch,faMapMarkerAlt,faWind,faTemperatureHigh,faTint } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSearch, faMapMarkerAlt)
+library.add(faSearch, faMapMarkerAlt,faWind, faTemperatureHigh,faTint)
 
 
 

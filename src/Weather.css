@@ -62,3 +62,11 @@
   position: relative;
   top: -5px;
 }
+.deegres-c:hover {
+  color: #806ef8;
+  text-decoration: none;
+}
+.deegres-f:hover {
+  color: #806ef8;
+  text-decoration: none;
+}
