@@ -30,9 +30,9 @@ export default function Wether() {
                 <span className="current-deegre">{weatherData.temp}</span>
                 <span className="main-deegre-units">
                   {" "}
-                  <a href="" className="deegres-c" />
+                 
                   C˚ |
-                  <a href="" className="deegres-f" /> F˚
+                  F˚
                 </span>
               </li>
               <li>
