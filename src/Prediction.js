@@ -18,91 +18,88 @@ export default function Prediction (){
                       className="prediction-icon"
                       src="images/cloudy-day-3.svg"
                       alt="cloudy"
-                      id="iconday1"
+                     
                     />
                   </li>
                   <li className="first-day-pred">
-                    <span id="day1"></span><span class="pred-units"> C˚</span>
+                    <span> 5</span><span className="pred-units"> C˚</span>
                   </li>
                   
               </ul>
                 </div>
             </div>
-            <div class="forecast-1 col">
-              <div class="pred-style">
+            <div className="forecast-1 col">
+              <div className="pred-style">
                 <ul>
                    <li><span>Tue</span></li>
                   
                   <li>
                     <img
-                      class="prediction-icon"
+                      className="prediction-icon"
                       src="images/cloudy-day-3.svg"
                       alt="cloudy"
-                      id="iconday2"
+                      
                     />
                   </li>
-                  <li class="first-day-pred">
-                    <span id="day2"></span><span class="pred-units"> C˚</span>
+                  <li className="first-day-pred">
+                    <span> 4</span><span className="pred-units"> C˚</span>
                   </li>
                  
                 </ul>
               </div>
             </div>
-            <div class="forecast-2 col">
-              <div class="pred-style">
+            <div className="forecast-2 col">
+              <div className="pred-style">
                 <ul>
                     <li><span>Wed</span></li>
                   
                   <li>
                     <img
-                      class="prediction-icon"
+                      className="prediction-icon"
                       src="images/cloudy-day-3.svg"
                       alt="cloudy"
-                      id="iconday3"
                     />
                   </li>
-                  <li class="first-day-pred">
-                    <span id="day3"></span><span class="pred-units"> C˚</span>
+                  <li className="first-day-pred">
+                    <span >7</span><span className="pred-units"> C˚</span>
                   </li>
                   
                 </ul>
               </div>
             </div>
-            <div class="forecast-3 col">
-               <div class="pred-style">
+            <div className="forecast-3 col">
+               <div className="pred-style">
                 <ul>
                     <li><span>Thur</span></li>
                   
                   <li>
                     <img
-                      class="prediction-icon"
+                      className="prediction-icon"
                       src="images/cloudy-day-3.svg"
                       alt="cloudy"
-                      id="iconday4"
                     />
                   </li>
-                  <li class="first-day-pred">
-                    <span id="day4"></span><span class="pred-units"> C˚</span>
+                  <li className="first-day-pred">
+                    <span>9</span><span className="pred-units"> C˚</span>
                   </li>
                  
                 </ul>
               </div>
             </div>
-            <div class="forecast-4 col">
-               <div class="pred-style">
+            <div className="forecast-4 col">
+               <div className="pred-style">
                 <ul>
                     <li><span>Fri</span></li>
                   
                   <li>
                     <img
-                      class="prediction-icon"
+                      className="prediction-icon"
                       src="images/cloudy-day-3.svg"
                       alt="cloudy"
-                      id="iconday5"
                     />
                   </li>
-                  <li class="first-day-pred">
-                    <span id="day5"></span><span class="pred-units"> C˚</span>
+                  <li className="first-day-pred">
+                    <span>5</span><span className="pred-units"> C˚</span>
                   </li>
                  
                 </ul>

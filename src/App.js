@@ -12,7 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div clasName="App">
+    <div className="App">
       <div className="weather-app-wrapper">
         <div className="card">
           <Search />

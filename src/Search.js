@@ -14,10 +14,10 @@ export default function Search (){
             autoComplete="off"
             autoFocus="on"
           />
-          <button variant="primary" type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             <FontAwesomeIcon icon="search" className="search-icon" />
           </button>
-          <button variant="primary" type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
            <FontAwesomeIcon icon="map-marker-alt"/>
           </button>
         </form>

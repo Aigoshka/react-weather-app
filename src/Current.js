@@ -7,7 +7,7 @@ export default function Current (){
     <div className="Current">
       <div className="row">
         <div className="col-6 city-day">
-          <ul className="Info">
+          <ul className="info">
             <li className="city-headline">Prague</li>
             <li className="day-headline">Monday, 28 Dec</li>
           </ul>
