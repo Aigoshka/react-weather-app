@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Search.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Search (){
@@ -11,8 +12,8 @@ export default function Search (){
             type="text"
             className="form-control mb-2 mr-sm-2"
             placeholder="Enter a City"
-            autoComplete="off"
-            autoFocus="on"
+            autoComplete={false}
+            autoFocus={true}
           />
           <button type="submit" className="btn btn-primary">
             <FontAwesomeIcon icon="search" className="search-icon" />
