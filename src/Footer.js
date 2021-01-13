@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="signuture">
         <a
           href="https://github.com/Aigoshka/react-weather-app"
-          target="blank_"
+          target="_blank"
         >
           Open-source code
         </a>{" "}

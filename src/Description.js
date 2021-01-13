@@ -12,7 +12,7 @@ export default function Description() {
   return (
     <div className="Description">
       <div className="row description">
-        <div className="col-4 wind-col">
+        <div className="col-4 px-0">
           <ul>
             <li className="second-desc-style">Wind</li>
             <li className="wind-box">
@@ -24,7 +24,7 @@ export default function Description() {
             </li>
           </ul>
         </div>
-        <div className="col-4 perc-col">
+        <div className="col-4 px-0">
           <ul>
             <li className="second-desc-style">Max Temp</li>
             <li className="max-box">
@@ -35,7 +35,7 @@ export default function Description() {
             </li>
           </ul>
         </div>
-        <div className="col-4 humidity-col">
+        <div className="col-4 px-0">
           <ul>
             <li className="second-desc-style">Humidity</li>
             <li className="humidity-box">

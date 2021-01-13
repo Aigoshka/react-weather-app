@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
+      <div className="container">
       <div className="weather-app-wrapper">
         <div className="card">
           <Search />
@@ -22,6 +23,7 @@ function App() {
           <Prediction/>
         </div>
         <Footer />
+      </div>
       </div>
     </div>
   );

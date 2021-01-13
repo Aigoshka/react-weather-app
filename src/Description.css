@@ -9,7 +9,6 @@
   border-radius: 8px;
   text-align: center;
   position: relative;
-
   padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
@@ -40,7 +39,7 @@
   padding-right: 0;
   padding-left: 0;
 }
-.humidity-col {
+.huminidity-col {
   padding-left: 0;
 }
 
