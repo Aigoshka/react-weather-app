@@ -24,23 +24,13 @@
   text-align: center;
 }
 .wind-box {
-  left: 19px;
+  left: 25px;
 }
 .humidity-box {
-  left: 17px;
+  left: 23px;
 }
 .max-box {
-  left: 26px;
-}
-.wind-col {
-  padding-right: 0;
-}
-.perc-col {
-  padding-right: 0;
-  padding-left: 0;
-}
-.huminidity-col {
-  padding-left: 0;
+  left: 25px;
 }
 
 .wind {
