@@ -38,9 +38,7 @@
   margin-right: -15px;
   margin-left: -3px;
 }
-.col {
-  padding: 0;
-}
+
 .pred-style:hover {
   background-image: linear-gradient(#b0a4ff, #806ef8);
   color: #fff;

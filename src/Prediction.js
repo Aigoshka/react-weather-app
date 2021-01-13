@@ -6,7 +6,7 @@ export default function Prediction (){
     return (
     <div className="Prediction">
 
-<h1 className="five-days-headline">Next 5 Days test</h1>
+<h1 className="five-days-headline">Next 5 Days</h1>
           <div className="row row-cols-5">
             <div className="forecast px-0">
                 <div className="pred-style">
