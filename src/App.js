@@ -1,9 +1,6 @@
 
 import './App.css';
-import Search from "./Search";
-import Current from "./Current";
 import Weather from "./Weather";
-import Description from "./Description";
 import Prediction from "./Prediction";
 import Footer from "./Footer";
 
@@ -16,10 +13,7 @@ function App() {
       <div className="container">
       <div className="weather-app-wrapper">
         <div className="card">
-          <Search />
-          <Current/>
           <Weather/>
-          <Description />
           <Prediction/>
         </div>
         <Footer />

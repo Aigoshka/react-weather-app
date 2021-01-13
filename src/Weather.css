@@ -1,3 +1,60 @@
+.Weather .form-control {
+  max-width: 170px;
+  margin-left: 12px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 2px solid #b1bdad85;
+  box-shadow: 3px 3px 10px #e7eaef;
+  padding: 6px 11px;
+}
+.Weather .form-inline {
+  margin-bottom: 15px;
+}
+.Weather .btn-primary {
+  background-color: #aecdff;
+  border-color: seashell;
+  color: #806ef8;
+  margin-right: 5px;
+  padding: 6px 11px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.Weather .btn-primary:hover {
+  color: #fff;
+  background-color: #5896fd;
+  border-color: seashell;
+}
+.city-day {
+  line-height: 20px;
+  margin-top: 2px;
+}
+
+.Weather .city-headline {
+  font-size: 20px;
+  color: #3a3b3efa;
+}
+.Weather .day-headline {
+  font-size: 12px;
+  color: #bfc0c3;
+}
+.Weather .hours {
+  font-size: 46px;
+  font-family: "Inter", sans-serif;
+  background-color: aliceblue;
+  background-image: linear-gradient(#ffffff, #cfe1fd 0%, #93bcff);
+  text-shadow: none;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 40px;
+  padding-right: 20px;
+  padding-left: 0px;
+}
+
 .Weather .current-weather {
   border: 1px none;
   border-radius: 25px;
@@ -62,6 +119,54 @@
   position: relative;
   top: -5px;
 }
+.description {
+  margin-right: -15px;
+  margin-left: -20px;
+}
+.Weather .max-box,
+.Weather .humidity-box,
+.Weather .wind-box {
+  border: 1px none;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  padding: 8px 0;
+  width: 54px;
+  background-color: #aecdffa8;
+  box-shadow: 3px 3px 16px #aecdff;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 1px;
+}
+
+.Weather .second-desc-style {
+  font-size: 12px;
+  color: #3a3b3efa;
+  text-align: center;
+}
+.wind-box {
+  left: 25px;
+}
+.humidity-box {
+  left: 23px;
+}
+.max-box {
+  left: 25px;
+}
+
+.wind {
+  color: #5896fd;
+  font-size: 25px;
+}
+.high-temp {
+  color: #de6565;
+  font-size: 25px;
+}
+.tint {
+  color: #806ef8;
+  font-size: 25px;
+}
+
 .deegres-c:hover {
   color: #806ef8;
   text-decoration: none;
