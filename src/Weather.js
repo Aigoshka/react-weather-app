@@ -1,14 +1,31 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Weather.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import axios from "axios";
 
 
+export default function Weather(props) {
+let [weatherData, setWeatherData]=useState({ready:false});
 
 
-
-
-export default function Weather() {
-return (
+function displayTemperature(response){
+  console.log (response.data);
+  setWeatherData({
+ready:true,
+temperature:response.data.main.temp,
+wind:response.data.wind.speed,
+humidity: response.data.main.humidity,
+feels: response.data.main.feels_like,
+city: response.data.name,
+description: response.data.weather[0].description,
+max: response.data.main.temp_max,
+date: "Monday",
+month:"29 Dec",
+  })
+ 
+}
+if (weatherData.ready){
+  return (
    <div className="Weather">
      <div className="row">
         <form className="form-inline">
@@ -30,8 +47,8 @@ return (
       <div className="row">
         <div className="col-6 city-day">
           <ul className="info">
-            <li className="city-headline">Prague</li>
-            <li className="day-headline">Monday, 28 Dec</li>
+  <li className="city-headline">{weatherData.city}</li>
+  <li className="day-headline"><span>{weatherData.date}</span>, <span>{weatherData.month}</span></li>
           </ul>
         </div>
         <div className="col-6 hours">20:00</div>
@@ -47,7 +64,7 @@ return (
               />
             </li>
             <li className="main-icon-description">
-              Cloudy Day
+  {weatherData.description}
             </li>
           </ul>
         </div>
@@ -55,7 +72,7 @@ return (
           <div className="clearfix weather-temperature">
             <ul>
               <li>
-                <span className="current-deegre">6</span>
+  <span className="current-deegre">{Math.round(weatherData.temperature)}</span>
                 <span className="main-deegre-units">
                   {" "}
                  
@@ -65,8 +82,8 @@ return (
               </li>
               <li>
                 <span className="feels-like">
-                  Feels like <span>3</span>{" "}
-                  <span className="feels-like-unit">C˚</span>
+  Feels like <span>{Math.round(weatherData.feels)}</span>{" "}
+                  <span className="feels-like-unit">C˚| F˚</span>
                 </span>
               </li>
             </ul>
@@ -82,7 +99,7 @@ return (
 
             </li>
             <li className="second-desc-style">
-              <span>20</span> km/h
+  <span>{Math.round(weatherData.wind)}</span> km/h
             </li>
           </ul>
         </div>
@@ -93,7 +110,7 @@ return (
               <FontAwesomeIcon icon="temperature-high" className="high-temp"/>
             </li>
             <li className="second-desc-style">
-              <span>10</span> C˚
+  <span>{Math.round(weatherData.max)}</span> C˚
             </li>
           </ul>
         </div>
@@ -104,15 +121,21 @@ return (
               <FontAwesomeIcon icon="tint" className="tint"/>
             </li>
             <li className="second-desc-style">
-              <span>80</span> %
+  <span>{weatherData.humidity}</span> %
             </li>
           </ul>
         </div>
       </div>
    </div>
-);
+);}
+else {
+    let apiKey ="f36e45e370221a0b671266843fbab2eb";
+   
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+return "Loading ";
 }
-
+}
 
 
 
