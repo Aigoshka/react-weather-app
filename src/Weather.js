@@ -1,5 +1,7 @@
 import React,{useState} from "react";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
+import FormattedHours from "./FormattedHours"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from "axios";
 
@@ -19,8 +21,8 @@ feels: response.data.main.feels_like,
 city: response.data.name,
 description: response.data.weather[0].description,
 max: response.data.main.temp_max,
-date: "Monday",
-month:"29 Dec",
+date: new Date (response.data.dt*1000),
+
   })
  
 }
@@ -48,10 +50,10 @@ if (weatherData.ready){
         <div className="col-6 city-day">
           <ul className="info">
   <li className="city-headline">{weatherData.city}</li>
-  <li className="day-headline"><span>{weatherData.date}</span>, <span>{weatherData.month}</span></li>
+  <li className="day-headline"><FormattedDate date={weatherData.date}/></li>
           </ul>
         </div>
-        <div className="col-6 hours">20:00</div>
+        <div className="col-6 hours"><FormattedHours date={weatherData.date}/></div>
       </div>
 <div className="row current-weather">
         <div className="col-6">
