@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedHours from "./FormattedHours";
+import WeatherIcon from "./WeatherIcon";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function WeatherInfo (props){
@@ -19,11 +20,9 @@ export default function WeatherInfo (props){
         <div className="col-6">
           <ul>
             <li>
-              <img
-                className="main-weather-icon"
-                src="images/rainy-2.svg"
-               alt="cloudy day"
-              />
+                <div className="main-weather-icon">
+                <WeatherIcon code={props.data.icon} alt={props.data.description}/>
+              </div>
             </li>
             <li className="main-icon-description">
   {props.data.description}

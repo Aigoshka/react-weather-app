@@ -4,7 +4,8 @@ import WeatherInfo from "./WeatherInfo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from "axios";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add (faSearch)
 
 export default function Weather(props) {
 let [weatherData, setWeatherData]=useState({ready:false});
@@ -22,7 +23,7 @@ city: response.data.name,
 description: response.data.weather[0].description,
 max: response.data.main.temp_max,
 date: new Date (response.data.dt*1000),
-
+icon: response.data.weather[0].icon,
   });
  
 }
