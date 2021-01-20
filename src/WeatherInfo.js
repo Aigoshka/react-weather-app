@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedHours from "./FormattedHours";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function WeatherInfo (props){
@@ -33,13 +34,7 @@ export default function WeatherInfo (props){
           <div className="clearfix weather-temperature">
             <ul>
               <li>
-  <span className="current-deegre">{Math.round(props.data.temperature)}</span>
-                <span className="main-deegre-units">
-                  {" "}
-                 
-                  C˚ |
-                  F˚
-                </span>
+        <WeatherTemperature celsius={props.data.temperature}/>
               </li>
               <li>
                 <span className="feels-like">
