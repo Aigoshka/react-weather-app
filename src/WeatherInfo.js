@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import FormattedHours from "./FormattedHours";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperatureFeels from "./WeatherTemperatureFeels";
 import WeatherTemperature from "./WeatherTemperature";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -37,10 +38,7 @@ export default function WeatherInfo (props){
         <WeatherTemperature celsius={props.data.temperature}/>
               </li>
               <li>
-                <span className="feels-like">
-  Feels like <span>{Math.round(props.data.feels)}</span>{" "}
-                  <span className="feels-like-unit">C˚| F˚</span>
-                </span>
+                <WeatherTemperatureFeels celsiusFeels={props.data.feels}/>
               </li>
             </ul>
           </div>

@@ -110,9 +110,10 @@
   right: 4px;
 }
 .feels-like-unit {
-  font-size: 8px;
+  color: #fff;
+  font-size: 6px;
   position: relative;
-  top: -5px;
+  top: 13px;
 }
 .description {
   margin-right: -15px;
