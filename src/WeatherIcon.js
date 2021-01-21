@@ -1,7 +1,6 @@
 import React from "react";
 import "./WeatherIcon.css"
 export default function WeatherIcon (props){
-    console.log(props.code);
     let codeMapping={
         "01d":"images/clear-day.svg",
         "01n": "images/clear-night.svg",
@@ -27,6 +26,5 @@ export default function WeatherIcon (props){
     <img className="main-icon" 
     src={codeMapping[props.code]} 
     alt={props.alt}/>
-    
     );
     }
