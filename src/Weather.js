@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Prediction from"./Prediction";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from "axios";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -43,6 +44,20 @@ function search(){
       event.preventDefault();
       setCity(event.target.value);
     }
+     function defineLocation(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let units = "metric";
+    let apiKey = "f36e45e370221a0b671266843fbab2eb";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
+    axios.get(apiUrl).then(displayTemperature)
+  }
+
+  function getPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(defineLocation);
+}
+
 
 if (weatherData.ready){
   return (
@@ -59,12 +74,13 @@ if (weatherData.ready){
           <button type="submit" className="btn btn-primary">
             <FontAwesomeIcon icon="search" className="search-icon" />
           </button>
-          <button type="submit" className="btn btn-primary">
+          <button onClick={getPosition} type="submit" className="btn btn-primary">
            <FontAwesomeIcon icon="map-marker-alt"/>
           </button>
         </form>
       </div>
       <WeatherInfo data={weatherData}/>
+      <Prediction city={weatherData.city}/>
    </div>
 );}
 else {

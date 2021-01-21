@@ -118,6 +118,7 @@
 .description {
   margin-right: -15px;
   margin-left: -20px;
+  margin-bottom: 15px;
 }
 .Weather .max-box,
 .Weather .humidity-box,

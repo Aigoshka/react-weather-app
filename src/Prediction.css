@@ -13,6 +13,9 @@
   right: 7px;
   top: -8px;
 }
+.prediction-hours {
+  font-size: 12px;
+}
 .first-day-pred {
   position: relative;
   bottom: 15px;
@@ -35,8 +38,8 @@
   color: white;
 }
 .Prediction .row-cols-5 {
-  margin-right: -15px;
-  margin-left: -3px;
+  margin-right: -20px;
+  margin-left: -5px;
 }
 
 .pred-style:hover {
