@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
 export default function PredictionData (props){
 function hours(){
@@ -20,13 +21,10 @@ function temperature (){
   <li><span className="prediction-hours">{hours()}</span></li>
                   
                   <li>
-                    
-                    <img
-                      className="prediction-icon"
-                      src="images/cloudy-day-3.svg"
-                      alt="cloudy"
-                      
-                    />
+                    <WeatherIcon
+              code={props.data.weather[0].icon}
+              alt={props.data.weather[0].description}
+            />
                   </li>
                   <li className="first-day-pred">
                     <span> {temperature()}</span><span className="pred-units"> C˚</span>
